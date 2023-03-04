@@ -10,7 +10,7 @@
         <h1>Detalles de Producto</h1>
 
         <p>
-            <a asp-action="Create" class="btn btn-success mg-2">Crear</a>
+            <a asp-action="Create" class="btn btn-success mg-2"><img src="~/img/add.png" alt="" width="30px">Crear</a>
         </p>
         <table class="table">
             <thead>
@@ -47,9 +47,9 @@
                             @Html.DisplayFor(modelItem => item.IdProducto)
                         </td>
                         <td>
-                            <a asp-action="Edit" asp-route-id="@item.IdDetalleProducto" class="btn btn-primary mg-2">Editar</a> |
-                            <a asp-action="Details" asp-route-id="@item.IdDetalleProducto" class="btn btn-info mg-2">Detalles</a> |
-                            <a asp-action="Delete" asp-route-id="@item.IdDetalleProducto" class="btn btn-danger">Borrar</a>
+                            <a asp-action="Edit" asp-route-id="@item.IdDetalleProducto" class="btn btn-primary mg-2"><img src="~/img/edit.png" alt="" width="30px">Editar</a> |
+                            <a asp-action="Details" asp-route-id="@item.IdDetalleProducto" class="btn btn-info mg-2"><img src="~/img/view.png" alt="" width="30px">Detalles</a> |
+                            <a asp-action="Delete" asp-route-id="@item.IdDetalleProducto" class="btn btn-danger"><img src="~/img/delete.png" alt="" width="30px">Borrar</a>
                         </td>
                     </tr>
                 }
