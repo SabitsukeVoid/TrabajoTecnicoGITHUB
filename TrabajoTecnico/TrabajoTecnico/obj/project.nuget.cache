@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bCcB0MD03mgs28Ov9yZOMj5d3S4O+Q3nw4/rQunZoBBclIKV8PA2k9BW5lAZ62I8RSiFAIJUGNYsZZ3Bz1jI3w==",
+  "dgSpecHash": "UNf0SJZh79OyrNyDgau3NorpMDfIAqQbQuUW++ITXzJIfEIh5QD3XYMJX6X8R8wqRk7lyeLxub3LFa8j+wt6PQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jhona\\source\\repos\\TrabajoTecnicoGIT\\TrabajoTecnico\\TrabajoTecnico\\TrabajoTecnico.csproj",
+  "projectFilePath": "C:\\Users\\jhona\\Source\\Repos\\TrabajoTecnicoGITHUB\\TrabajoTecnico\\TrabajoTecnico\\TrabajoTecnico.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jhona\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jhona\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

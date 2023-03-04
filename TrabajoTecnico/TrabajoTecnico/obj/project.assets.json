@@ -10103,11 +10103,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jhona\\source\\repos\\TrabajoTecnicoGIT\\TrabajoTecnico\\TrabajoTecnico\\TrabajoTecnico.csproj",
+      "projectUniqueName": "C:\\Users\\jhona\\Source\\Repos\\TrabajoTecnicoGITHUB\\TrabajoTecnico\\TrabajoTecnico\\TrabajoTecnico.csproj",
       "projectName": "TrabajoTecnico",
-      "projectPath": "C:\\Users\\jhona\\source\\repos\\TrabajoTecnicoGIT\\TrabajoTecnico\\TrabajoTecnico\\TrabajoTecnico.csproj",
+      "projectPath": "C:\\Users\\jhona\\Source\\Repos\\TrabajoTecnicoGITHUB\\TrabajoTecnico\\TrabajoTecnico\\TrabajoTecnico.csproj",
       "packagesPath": "C:\\Users\\jhona\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jhona\\source\\repos\\TrabajoTecnicoGIT\\TrabajoTecnico\\TrabajoTecnico\\obj\\",
+      "outputPath": "C:\\Users\\jhona\\Source\\Repos\\TrabajoTecnicoGITHUB\\TrabajoTecnico\\TrabajoTecnico\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

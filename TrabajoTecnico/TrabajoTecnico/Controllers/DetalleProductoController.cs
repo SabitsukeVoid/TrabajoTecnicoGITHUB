@@ -9,15 +9,16 @@ using TrabajoTecnico.Models;
 
 namespace TrabajoTecnico.Controllers
 {
+
     public class DetalleProductoController : Controller
     {
+        
         private readonly PostgresqlContext _context;
 
         public DetalleProductoController(PostgresqlContext context)
         {
             _context = context;
         }
-
         // GET: DetalleProducto
         public async Task<IActionResult> Index()
         {
@@ -47,6 +48,8 @@ namespace TrabajoTecnico.Controllers
         // GET: DetalleProducto/Create
         public IActionResult Create()
         {
+
+
             ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "IdProducto");
             return View();
         }
@@ -163,5 +166,8 @@ namespace TrabajoTecnico.Controllers
         {
           return _context.DetalleProductos.Any(e => e.IdDetalleProducto == id);
         }
+
+        
+
     }
 }

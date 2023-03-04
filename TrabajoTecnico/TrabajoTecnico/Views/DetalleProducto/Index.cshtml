@@ -3,51 +3,58 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div class="content">
+    <br />
+    <br />
+    <div class="container bg-dark p-4 rounded-2 text-white">
+        <h1>Detalles de Producto</h1>
 
-<h1>Index</h1>
+        <p>
+            <a asp-action="Create" class="btn btn-success mg-2">Crear</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-white">
+                        @Html.DisplayNameFor(model => model.Cantidad)
+                    </th>
+                    <th class="text-white">
+                        @Html.DisplayNameFor(model => model.ValorTotal)
+                    </th>
+                    <th class="text-white">
+                        @Html.DisplayNameFor(model => model.ValorIva)
+                    </th>
+                    <th class="text-white">
+                        @Html.DisplayNameFor(model => model.IdProducto)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-white">
+                            @Html.DisplayFor(modelItem => item.Cantidad)
+                        </td>
+                        <td class="text-white">
+                            @Html.DisplayFor(modelItem => item.ValorTotal)
+                        </td>
+                        <td class="text-white">
+                            @Html.DisplayFor(modelItem => item.ValorIva)
+                        </td>
+                        <td class="text-white">
+                            @Html.DisplayFor(modelItem => item.IdProducto)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.IdDetalleProducto" class="btn btn-primary mg-2">Editar</a> |
+                            <a asp-action="Details" asp-route-id="@item.IdDetalleProducto" class="btn btn-info mg-2">Detalles</a> |
+                            <a asp-action="Delete" asp-route-id="@item.IdDetalleProducto" class="btn btn-danger">Borrar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Cantidad)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ValorTotal)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ValorIva)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdProductoNavigation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cantidad)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ValorTotal)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ValorIva)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdProductoNavigation.IdProducto)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdDetalleProducto">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdDetalleProducto">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdDetalleProducto">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    </div>
+</div>

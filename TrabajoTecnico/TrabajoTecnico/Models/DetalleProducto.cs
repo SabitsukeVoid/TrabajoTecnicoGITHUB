@@ -16,4 +16,6 @@ public partial class DetalleProducto
     public int? ValorIva { get; set; }
 
     public virtual Producto? IdProductoNavigation { get; set; }
+
 }
+
